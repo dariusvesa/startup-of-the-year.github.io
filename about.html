@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>Photo Elegance</title>
+	<link rel="stylesheet" href="style.css"> 		<!-- link'ul catre css -->
+</head>
+<body>
+
+	<!-- header -->
+
+	<section class="sub-header"> 	
+		<!-- am o sectie cu header'ul ce include navbar, imagine, text si butonul 'Contact me' -->
+		<nav>
+			<a href="index.html"><img src="media/01_Banner/txt_icon_opaque2.png" class="banner_header"></a>
+			<div class="nav-links nav-links2" id="navLinks"> 
+				<!-- folosesc navLinks in scriptul Javascript -->
+				<i class="drop hide_icon" onclick="hideMenu()"><img src="media/02_Icons/xicon.png"></i>
+				<ul>
+					<li><a href="index.html">ACASA</a></li>
+					<li><a href="about.html">DESPRE MINE</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+				<i class="drop show_icon" onclick="showMenu()"><img src="media/02_Icons/zicon3.png"></i>
+		</nav>
+		<h1>Despre mine</h1>
+	</section>
+
+	<!-- content -->
+
+
+	<section class="about_content">
+		<div class="pachet">
+			<div class="about_content_col">
+			<h1>Journey</h1>
+			<p>La 25 de ani am terminat Masterul în Electrotehnică, în Timișoara. Cu toate că îmi prestez meseria în domeniu asta nu m-a oprit niciodată să îmi urmez pasiunea mea ca și fotograf. De la prima mea cameră digitală până la ultima cameră foto profesională un singur lucru am știut, să fac poze. Că eram în vârful muntelui sau în viața de zi cu zi, pozele erau și ele prezente. Mai jos puteți vizualiza o mostră din portofoliul vieții mele. Dacă doriți un portofoliu mai vast, în partea de jos a paginii sunt butoane unde puteți vizualiza câteva portofolii puse la dispoziția dumneavoastră, să vă faceți o idee despre pasiunea mea.</p>
+			<a href="contact.html" class="buton-header red-btn">CONTACT</a>
+			</div>
+			<div class="about_content_col">
+				<img src="media/03_Images/dsc0093_2.jpg">
+			</div>
+		</div>
+	</section>
+
+
+<!-- <section>
+<div class="row">
+  <div class="column">
+    <img src="media/04_Portofolio/01.jpg">
+    <img src="media/04_Portofolio/02.jpg">
+    <img src="media/04_Portofolio/03.jpg">
+    <img src="media/04_Portofolio/04.jpg">
+  </div>
+  <div class="column">
+    <img src="media/04_Portofolio/05.jpg">
+    <img src="media/04_Portofolio/06.jpg">
+    <img src="media/04_Portofolio/07.jpg">
+    <img src="media/04_Portofolio/08.jpg">
+  </div>
+  <div class="column">
+    <img src="media/04_Portofolio/09.jpg">
+    <img src="media/04_Portofolio/10.jpg">
+    <img src="media/04_Portofolio/11.jpg">
+    <img src="media/04_Portofolio/12.jpg">
+  </div>
+</div>
+</section> -->
+
+
+<!-- footer -->
+
+	<section class="footer">
+		<h4>Photo Elegance</h4>
+		<p class="text_footer">IN OMNIA PARATUS</p>
+		<div class="icons">
+			<a href="https://www.facebook.com/DariusAdrianV/"><img src="media/02_Icons/facebook_rev.png"></a>
+			<a href="https://twitter.com/i33SoDA"><img src="media/02_Icons/twitter_res.png"></a>
+			<a href="https://www.instagram.com/darius.adrian91/"><img src="media/02_Icons/instagram_rev.png"></a>
+			<a href="https://www.linkedin.com/in/dvesa/"><img src="media/02_Icons/linkedin_rev.png"></a>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+		<!-- JavaScript -->
+
+<script>		
+		var navLinks=document.getElementById("navLinks");
+
+		function showMenu(){
+			navLinks.style.right="0"
+		}
+
+		function hideMenu(){
+			navLinks.style.right="-100px"
+		}
+</script>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a "loop" variable
+var i;
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "25%";
+  }
+}
+</script>
+
+</body>
+</html>

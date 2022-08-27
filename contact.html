@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>Photo Elegance</title>
+	<link rel="stylesheet" href="style.css"> 		<!-- link'ul catre css -->
+</head>
+<body>
+
+	<!-- header -->
+
+	<section class="sub-header contact-header"> 	
+		<!-- am o sectie cu header'ul ce include navbar, imagine, text si butonul 'Contact me' -->
+		<nav>
+			<a href="index.html"><img src="media/01_Banner/txt_icon_opaque2.png" class="banner_header"></a>
+			<div class="nav-links nav-links2" id="navLinks"> 
+				<!-- folosesc navLinks in scriptul Javascript -->
+				<i class="drop hide_icon" onclick="hideMenu()"><img src="media/02_Icons/xicon.png"></i>
+				<ul>
+					<li><a href="index.html">ACASA</a></li>
+					<li><a href="about.html">DESPRE MINE</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+				<i class="drop show_icon" onclick="showMenu()"><img src="media/02_Icons/zicon3.png"></i>
+		</nav>
+		<h1>Contact</h1>
+	</section>
+
+	<!-- contact -->
+
+	<section class="location">
+		
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89103.93341183623!2d21.146549938625476!3d45.74116295862078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4745677dcb0fb5a7%3A0x537faf6473936749!2sTimi%C8%99oara!5e0!3m2!1sro!2sro!4v1661617445037!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+	</section>
+
+	<section class="contact_me">
+		
+		<div class="pachet">
+			<div class="contact_column">
+				<div>
+					<img src="media/02_Icons/home_res.png">
+					<span>
+						<h5>Timisoara, Timis</h5>
+						<p>Natura, Urban, Portrete</p>
+					</span>
+				</div>
+				<div>
+					<img src="media/02_Icons/phone_res.png">
+					<span>
+						<h5>Disponibilitate</h5>
+						<p>Sambata - Duminica, 10AM to 10PM</p>
+					</span>
+				</div>
+				<div>
+					<img src="media/02_Icons/email_res.png">
+					<span>
+						<h5>Lasa un mesaj</h5>
+						<p>E-mail</p>
+					</span>
+				</div>
+			</div>		
+			<div class="contact_column">
+				<form action="form-handler.php" method="post">
+					<input type="text" name="name" placeholder="Introdu Nume/Prenume" required>
+					<input type="email" name="email" placeholder="Introdu adresa email" required>
+					<input type="text" name="subject" placeholder="Introdu titlu" required>
+					<textarea rows="8" name="message" placeholder="Mesajul tau" required></textarea>
+					<button type="submit" class="buton-header red-btn">Trimite Mesaj</button>
+				</form>
+			</div>		
+		</div>
+
+
+
+	</section>
+
+
+
+	<!-- footer -->
+
+	<section class="footer">
+		<h4>Photo Elegance</h4>
+		<p class="text_footer">IN OMNIA PARATUS</p>
+		<div class="icons">
+			<a href="https://www.facebook.com/DariusAdrianV/"><img src="media/02_Icons/facebook_rev.png"></a>
+			<a href="https://twitter.com/i33SoDA"><img src="media/02_Icons/twitter_res.png"></a>
+			<a href="https://www.instagram.com/darius.adrian91/"><img src="media/02_Icons/instagram_rev.png"></a>
+			<a href="https://www.linkedin.com/in/dvesa/"><img src="media/02_Icons/linkedin_rev.png"></a>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+		<!-- JavaScript -->
+
+<script>		
+		var navLinks=document.getElementById("navLinks");
+
+		function showMenu(){
+			navLinks.style.right="0"
+		}
+
+		function hideMenu(){
+			navLinks.style.right="-100px"
+		}
+</script>
+
+</body>
+</html>
